@@ -6,7 +6,12 @@ let hasBlackJack = false
 let messageEl = document.getElementById("message-el")
 let message = ""
 let cardEl = document.getElementById("card-el")
-
+let player = {
+    "name": "Faizan",
+    "chips": "450"
+}
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + " $" + player.chips 
 
 function generateRandomNumber()
 {
